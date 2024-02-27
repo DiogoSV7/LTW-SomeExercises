@@ -1,0 +1,77 @@
+article .comment p{
+    background-color: lightgrey;
+    padding: 1em;
+    text-transform: none;
+    font-size:normal;
+}
+
+article .comment p::before{
+    content: "\201C";
+}
+
+article .comment .user{
+    font-style: italic;
+}
+
+article .comment .user::after{
+    content: " said:";
+    font-style: normal;
+}
+
+article.comment .date{
+   float:right;
+   padding-right:1em;
+}
+
+article form{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "add add"
+                         "user email"
+                         "comment comment"
+                         "none reply";
+}
+
+input[type="text"]{
+    grid-area:user;
+}
+
+input[type="email"]{
+    grid-area:user;
+}
+
+form h2{
+    grid-area: add;
+    font-size:small;
+    font-family: "Arial";
+    padding:1em;
+}
+
+button{
+    grid-area:reply;
+    padding:0.25em;
+    color:white;
+    margin-right:1em;
+    margin-bottom:0.5em;
+    background-color:black;
+}
+
+textarea{
+    grid-area:comment;
+    margin: 1em;
+    padding:1em;
+}
+
+footer{
+    margin:1em 0 0 0;
+}
+
+#news footer::before{
+    content: "By ";
+}
+
+.date, .tags, .comments{
+    margin-left:1em;
+    float:right;
+}

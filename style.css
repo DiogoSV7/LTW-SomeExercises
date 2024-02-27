@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:400,700');
+
+#menu {
+    line-height: 1em;
+}
+
+#menu ul {
+    text-indent: 0;
+    margin-top:0;
+    padding:0;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color:black;  
+    border-top-width:auto;
+    padding:0;
+}
+
+#hamburger {
+    display:none;
+}
+
+#signup{
+    font-weight: 100;
+}
+
+#signup a[href="login.html"]{
+    padding-left: 1em;
+}
+
+#signup a[href="register.html"]{
+    border-right: 1px solid white;
+    padding-right: 1em;
+}
+
+#menu ul li:nth-child(1){
+    border-top:5px solid red;
+    font-family: "Arial";
+    display: block;
+    padding:1em;
+    text-align: center;
+}
+
+#menu ul li:nth-child(2){
+    border-top:5px solid #8ABA56;
+    font-family: "Arial";
+    display: block;
+    padding:1em;
+    text-align: center;
+}
+
+#menu ul li:nth-child(3){
+    border-top:5px solid #5B4282;
+    font-family: "Arial";
+    display: block;
+    padding:1em;
+    text-align: center;
+}
+
+#menu ul li:nth-child(4){
+    border-top:5px solid #FF8932;
+    font-family: "Arial";
+    display: block;
+    padding:1em;
+    text-align: center;
+}
+
+#menu ul li:nth-child(5){
+    border-top:5px solid #19B6E9;
+    font-family: "Arial";
+    display: block;
+    padding:1em;
+    text-align: center;
+}
+
+#menu ul li:nth-child(6){
+    border-top:5px solid #E84C8B;
+    font-family: "Arial";
+    display: block;
+    padding:1em;
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+header{
+    display: block;
+    background-color:#046DD5;
+    padding: 1em;
+    line-height: 1em;
+}
+
+header h1{
+    font-weight: bold;
+}
+
+header h2{
+    font-size:x-large;
+    font-weight:normal;
+}
+
+header a{
+    color:white;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+
+#related {
+    background-color: #2A2F33;
+    padding:1em;
+    color:white;
+}
+
+#related article h1 a{
+    text-decoration: none;
+    font-family: "Arial";
+    font-weight:bold;
+    color:white;
+}
+
+#news article .article-content header {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+#news header{
+    display:block;
+    position:absolute;  
+    background-color: transparent;
+    width:10em;
+    font-size:1.5em;
+    text-shadow: 6px 6px 4px black;   
+}
+
+
+#news footer{
+    display:block;
+    background-color: rgb(208, 78, 78);
+    color:white;
+    text-shadow:0 0 0 1em #2A2F33;
+    padding:1em;
+}
+
+#news article p:first-of-type::first-letter {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.tags a{
+    color:white;
+}
+
+.comments{
+    color:white;
+}
+
+footer{
+    background-color: #2A2F33;
+    color:white;
+    padding-top: 0.5em;
+    padding-left: 1em;;
+    padding-bottom: 0.25em;
+}
