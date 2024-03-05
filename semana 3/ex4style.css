@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+body{
+    width:60em;
+    font-family: "Martel Sans";
+    font-weight: bold;
+    font-size: small;
+    text-decoration: none;
+    
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "firstName lastName Username"
+                         "email email password"
+                         "adress adress adress"
+                         "country city zipcode"
+                         "bio bio bio"
+                         "blank blank register";
+}
+
+label{
+    display:flex;
+    flex-direction: column;
+    line-height: 1em;
+    margin: 0.5em;
+    font-size: smaller;
+}
+
+input{
+
+}
+
+#username{
+    grid-area: Username;
+    color:#DC2626;
+    input{
+        background-color: #FECACA;
+        border-style:solid;
+        padding:1em;
+        border-color: #F87171;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#fname{
+    grid-area: firstName;
+    input{
+        background-color: #ECFCCB;
+        border-style:solid;
+        padding:1em;
+        border-color: #84CC16;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#password{
+    grid-area: password;
+    color:#DC2626;
+    input{
+        background-color: #FECACA;
+        border-style:solid;
+        padding:1em;
+        border-color: #F87171;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#lname{
+    grid-area: lastName;
+    input{
+        background-color: #ECFCCB;
+        padding:1em;
+        border-style:solid;
+        border-color: #84CC16;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#email{
+    grid-area: email;
+    color:#DC2626;
+    input{
+        border-style:solid;
+        background-color: #FECACA;
+        padding:1em;
+        border-color: #F87171;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#address{
+    grid-area: adress;
+    input{
+        background-color: #ECFCCB;
+        border-style:solid;
+        padding:1em;
+        border-color: #84CC16;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#country{
+    grid-area: country;
+    select {
+        background-color: #ECFCCB;
+        padding:1em;
+        border-color: #84CC16;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#city{
+    grid-area: city;
+    input{
+        background-color: #ECFCCB;
+        border-style:solid;
+        padding:1em;
+        border-color: #84CC16;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#zipcode{
+    grid-area : zipcode;
+    input{
+        background-color: #ECFCCB;
+        border-style:solid;
+        padding:1em;
+        border-color: #84CC16;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#bio{
+    grid-area: bio;
+    textarea {
+        background-color: #ECFCCB;
+        padding:1em;
+        padding-bottom:5em;
+        border-color: #84CC16;
+        border-radius: 0.2em;
+        border-width: 2px;
+    }
+}
+
+#register{
+    grid-area: register;
+    font-weight: bold;
+    color: white;
+    background-color:#84CC16;
+    border-style:solid;
+    padding:1em;
+    margin:1em 0.5em;
+    border-radius: 2px;
+    border-color: #84CC16;
+}

@@ -1,0 +1,17 @@
+@media (max-width: 30em){
+    form{
+        display: grid;
+        grid-template-columns: 30em;
+        grid-template-areas: "firstName"
+                             "lastName"
+                             "Username"
+                             "password"
+                             "email"
+                             "adress"
+                             "country"
+                             "city"
+                             "zipcode"
+                             "bio"
+                             "register";
+    }
+}

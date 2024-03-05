@@ -1,0 +1,24 @@
+3.2
+
+como assim oq acontece??
+
+3.3
+
+1 - #foo .bar li :first-child - (1,2,1)
+2 - .bar li (0,1,1)
+3 - .bar .second (0,2,0)
+4 - li a (0,0,2)
+
+3.4
+
+1 - secção com id foo vai inherit
+2 - magenta pq a regra com mais especifividade é .bar li
+3 - 1º inherit, o resto red
+4 - links ficam cyan pq não há outra regra para eles?
+
+3.5 
+
+1 - magenta .bar li 
+2 - red  .bar .second  
+3 - amarelo section li:first-child ~ li
+4 - amarelo section li:first-child ~ li

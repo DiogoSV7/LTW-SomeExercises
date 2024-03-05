@@ -1,0 +1,33 @@
+@media (max-width: 60em) {
+    #news {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 30em) {
+    #menu ul {
+      display: none;
+    }
+    #menu ul.open {
+      display: block;
+    }
+    #menu ul li {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 30em) {
+    h2 {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 30em) {
+    #news article header {
+      text-align: center; 
+    }
+    #news article img {
+      display: block; 
+      margin: 0 auto;
+    }
+  }

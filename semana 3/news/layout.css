@@ -1,0 +1,47 @@
+body{
+    width:60em;
+    background-color: #EDEFF0;
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "header header"
+                         "menuul menu"
+                         "news menu"
+                         "footer menu";
+}
+
+header{
+    grid-area:header;
+}
+
+#menu{
+    grid-area: menuul;
+}
+
+#news{
+    grid-area: news;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#related {
+    display:flex;
+    flex-direction:column;
+    grid-area: menu;
+}
+
+#menu ul{
+    display:flex;
+}
+
+#menu ul li{
+    flex-grow:1;
+}
+
+#signup {
+    display: flex;
+    justify-content: flex-end;
+}
+
