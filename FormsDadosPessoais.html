@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>FORMS DE DADOS PESSOAIS</title>
+</head>
+<body>
+    <h1>Dados Pessoais</h1>
+    <form method="get">
+        <label for="name"><strong>Name :</strong></label>
+        <input type="text" name="name" id="name" required>
+    </form>
+    <form>
+        <p></p>
+        <label><strong>Age :</strong></label><br>
+        <input type="radio" name="age" value="18" checked="checked">18
+        <input type="radio" name="age" value="19-35">19-35
+        <input type="radio" name="age" value="36-48">36-48
+        <input type="radio" name="age" value=">49">49
+    </form>
+    <form>
+        <p></p>
+        <label for="profession"><strong>Profession :</strong></label>
+        <input name="profession" list="professions">
+        <datalist id="professions">
+            <option>Engineer</option>
+            <option>Farmer</option>
+            <option>Mechanic</option>
+            <option>Teacher</option>
+            <option>Doctor</option>
+        </datalist>
+    </form>
+    <form>
+        <p></p>
+        <label for="country"><strong>Country :</strong></label>
+        <select name="country" id="country" required>
+            <option value="select">Select</option>
+            <option value="spain">Spain</option>
+            <option value="portugal">Portugal</option>
+            <option value="scotland">Scotland</option>
+            <option value="denmark">Denmark</option>
+        </select>
+    </form>
+    <form>
+        <p></p>
+        <label><strong>Interests :</strong></label><br>
+        <input type="checkbox" name="interests" value="Footbal">Footbal
+        <input type="checkbox" name="interests" value="Money">Money
+        <input type="checkbox" name="interests" value="Dating">Dating
+        <input type="checkbox" name="interests" value="Cars">Cars
+    </form>
+</body>
+</html>
